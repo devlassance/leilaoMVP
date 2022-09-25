@@ -1,0 +1,34 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 15px;
+    height: 65px;
+    background:#ffffff;
+    border-bottom: 1px groove #000;
+}
+.link-logo{
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.menu-group li{   
+    height: 65px;
+    line-height: 65px;
+    list-style:none;
+    padding:0 15px;
+    font-size:13px;
+}
+
+
+.menu-group li:hover{
+    border-bottom: 3px solid #ff4757;
+    color:#ff4757;
+    
+}
+
+.btn-login-menu{
+    font-weight: bold;
+    font-size:15px;
+}

@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    font: Poppins,sans-serif;
+    color:#2f3542;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#f1f2f6;
+}
+
+.d-flex{
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title-0{
+   text-align: center;
+   font-size:30px;
+}
+
+.title-1{
+    font-size:21px;
+}
+
+
+.flex-center-content{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-items{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    font-size: 11px;
+    font-weight: bold;
+    color:#fff;
+    padding:5px 10px;
+    border:0;
+    border-radius: 3px;   
+}
+.btn-red{
+    background:#ff6348;
+    box-shadow:0.01px 0.01px 5px 0.01px #ff6348;
+}
+.btn-red:hover{
+    cursor: pointer;
+    background:#ff2d11;
+    box-shadow:0.01px 0.01px 5px 0.01px #ff2d11;
+}
