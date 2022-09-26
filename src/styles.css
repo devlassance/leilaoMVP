@@ -18,10 +18,8 @@ a {
 }
 
 .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
     margin-right: auto;
     margin-left: auto;
 }

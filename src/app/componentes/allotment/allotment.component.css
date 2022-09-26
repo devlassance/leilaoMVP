@@ -1,0 +1,28 @@
+.area-allotment{
+    width:300px;
+    height: 420px; 
+    box-shadow: 1px 1px 6px 1px #000;
+    border-radius: 3px;
+    background-color:#fff;
+}
+.area-allotment img{
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.content-internal-allotment{
+    padding:10px 15px;
+}
+.area-brand-title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.allotment-brand {
+    font-size:13px;
+    color:#747d8c;
+    margin-bottom: 5px;
+}
+
+.allotment-title{
+    font-size:19px;
+}
