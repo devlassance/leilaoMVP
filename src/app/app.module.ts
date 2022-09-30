@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './componentes/home/home.component';
-import { AllotmentComponent } from './componentes/allotment/allotment.component';
+import { AllotmentComponent } from './componentes/allotments/allotment/allotment.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { GetAllotmentsComponent } from './componentes/allotments/get-allotments/get-allotments.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { FooterComponent } from './componentes/footer/footer.component';
     HeaderComponent,
     HomeComponent,
     AllotmentComponent,
-    FooterComponent
+    FooterComponent,
+    GetAllotmentsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
