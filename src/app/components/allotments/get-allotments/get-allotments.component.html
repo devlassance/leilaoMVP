@@ -1,0 +1,10 @@
+
+    <div *ngIf="getAllotments.length > 0, else semPensamentos">
+        <div class="container allotment-group" *ngFor="let allotment of getAllotments">
+            <app-allotment [allotment]="allotment"></app-allotment>
+        </div>
+    </div>
+    
+    <ng-template #semPensamentos>
+            <p>Ainda não há lotes cadastrados</p>
+    </ng-template>

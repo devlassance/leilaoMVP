@@ -1,0 +1,37 @@
+<a routerLink="/lote/{{allotment.brand}}/{{allotment.slug}}/{{allotment.id}}">
+    <div class="area-allotment" >
+        <div class="info-card">
+            {{allotment.status}}
+        </div>
+        <div class="area-foto">
+            <img src="assets/img/allotments/{{allotment.thumbnail}}" alt="" width="100%">
+        </div>
+        
+        <div class="content-internal-allotment">
+            <div class="area-brand-title">
+                <div class="allotment-brand">{{allotment.brand}}</div>
+                <div class="allotment-title">{{allotment.name}}</div>
+            </div>
+    
+            <div class="area-view-bids">
+                {{allotment.status}}:  
+                <strong><fa-icon [icon]="eye"></fa-icon> {{allotment.view}} </strong>
+                <strong><fa-icon [icon]="gavel"></fa-icon> {{allotment.bids}}</strong>
+            </div>
+    
+            <div class="current-value">{{allotment.totalValue.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}}</div>
+    
+            <div class="area-dates">
+                <div class="date"><fa-icon [icon]="calendar"></fa-icon> {{allotment.startDate| date : 'dd/MM/yyyy'}} <fa-icon class="clock-icon" [icon]="clock"></fa-icon> {{allotment.startDate| date : 'HH:mm'}}</div>
+                <div class="date"><fa-icon [icon]="calendar"></fa-icon> {{allotment.endDate| date : 'dd/MM/yyyy'}} <fa-icon class="clock-icon" [icon]="clock"></fa-icon> {{allotment.endDate| date : 'HH:mm'}}</div>
+            </div>
+    
+            <div class="local">
+                <fa-icon [icon]="locationDot"></fa-icon> {{allotment.city}} - {{allotment.uf}}
+            </div>
+    
+        </div>
+    </div>
+</a>
+
+

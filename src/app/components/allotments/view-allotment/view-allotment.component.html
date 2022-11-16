@@ -1,0 +1,100 @@
+<app-header></app-header>
+<div class="container">
+    <section class="area-big-info">
+        <h2 class="title-info">{{allotment.principalTitle}}</h2>
+        <h3 class="description-info">{{allotment.principalDescription}}</h3>
+
+        <div class="infos-aditional">
+            <p><strong>Comitente:</strong> {{allotment.principalName}}</p>
+            <p><strong>Modalidade:</strong> {{allotment.principalCategory}}</p>
+        </div>
+        <div class="infos-aditional">
+            <p><strong>Data de início:</strong> {{allotment.startDate| date : 'dd/MM/yyyy'}} às {{allotment.startDate| date : 'HH:mm'}}</p>
+            <p><strong>Data de Término:</strong> {{allotment.endDate| date : 'dd/MM/yyyy'}} às {{allotment.endDate| date : 'HH:mm'}}</p>
+        </div>
+
+        <div class="habilitar-info">HABILITAR-SE PARA LEILÃO</div>
+    </section>
+    <h3 class="brand">{{allotment.brand}}</h3>
+    <h2 class="name">{{allotment.name}}</h2>
+    <div class="bids-views"><fa-icon [icon]="eye"></fa-icon> {{allotment.view}} visualizações <fa-icon [icon]="gavel"></fa-icon> {{allotment.bids}} lances</div>
+    <section class="thumb-incremeting-clock">
+        <div class="thumbnail">
+            <img src="assets/img/allotments/{{allotment.thumbnail}}" width="100%" alt="">
+        </div>
+        <div class="incremeting incremeting-clock">
+            <div class="incremeting-title">
+                <h2>ABERTO PARA LANCES</h2>
+            </div>
+
+            <div class="area-incremeting-buttons">
+                <div class="incremeting-button" *ngFor='let i of incremeting(allotment.minimumBid)' >
+                    <div class="plus-icon-area">
+                        <fa-icon [icon]="plus"></fa-icon>
+                    </div>
+                    <div class="bid-incremeting">{{i.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="clock incremeting-clock">
+            <div class="area-clock-infos">
+                <div class="text-area-clock">LEILÃO ENCERRA EM</div>
+                <div class="area-clock">
+
+                    <div class="number-area">
+                        <div class="number">00</div>
+                        <p class="number-info">HORAS</p>
+                    </div>
+                    <div class="separator">:</div>
+
+                    <div class="number-area">
+                        <div class="number">00</div>
+                        <p class="number-info">MIN</p>
+                    </div>
+
+                    <div class="separator">:</div>
+
+                    <div class="number-area">
+                        <div class="number">00</div>
+                        <p class="number-info">SEG</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="area-user">
+                <div class="text-area-clock"><strong>LANCE ATUAL:</strong></div>
+                <div class="price">{{allotment.totalValue.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}}</div>
+                <div class="date-min">{{allotment.startDate| date : 'dd/MM/yyyy'}}</div>
+                <div class="text-area-clock">
+                    <strong>Usuário: Glenda Monteiro</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="history-bids">
+        <h2 class="title-1">Histórico de Lances</h2>
+
+        <table>
+            <tr>
+                <th [width]="120">TIPO</th>
+                <th [width]="300">USUÁRIO / PLAQUETA</th>
+                <th [width]="130">DATA</th>
+                <th [width]="250">VALOR</th>
+            </tr>
+           
+
+            <tr>
+                <td>On Line</td>
+                <td>Toninho</td>
+                <td>04/10/2022</td>
+                <td>R$ 66.6000,00</td>
+            </tr>
+
+        </table>
+    </section>
+    
+</div>
+
+<app-footer></app-footer>
