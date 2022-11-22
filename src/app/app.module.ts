@@ -27,7 +27,6 @@ import { ViewAllotmentComponent } from './components/allotments/view-allotment/v
     BrowserModule,
     CommonModule,
     AppRoutingModule,
-    AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule
   ],
