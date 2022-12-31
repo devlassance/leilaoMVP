@@ -1,0 +1,150 @@
+<app-header></app-header>
+
+<div class="card-register">
+    <h1 class="h5">Faça seu cadastro</h1>
+    <hr>
+    <div class="mb-3">
+        <button class="btn btn-success me-1">Pessoa Física</button>
+        <button class="btn btn-outline-secondary mb3">Pessoa Jurídica</button>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Nome*" [(ngModel)]="user.name">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="E-mail*" [(ngModel)]="user.email">
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="CPF*" [(ngModel)]="user.cpf">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="RG*" [(ngModel)]="user.rg">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label for="inputState" class="form-label">Sexo*</label>
+            <select id="inputState" class="form-select mb-3" [(ngModel)]="user.genre">
+                <option selected>Selecione...</option>
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+                <option value="3">Outro</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <label for="inputState" class="form-label mb-3">Data de nascimento*</label>
+            <input type="date" class="form-control" id="inputZip">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Celular*">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="CEP*">
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Endereço*">
+            </div>
+        </div>
+
+        <div class="col-2">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Número*">
+            </div>
+        </div>
+
+        <div class="col-2">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Complemento*">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Bairro*">
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Cidade*">
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="input-group mb-3">
+                <select class="form-select mb-3">
+                    <option selected>Estado</option>
+                    <option>RJ</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Nome Único*">
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Senha*">
+            </div>
+        </div>
+
+        
+        <div class="col-4">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Confirmar a senha*">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label mb-3" for="gridCheck">
+                Eu aceito os <a class="link">termos de uso*</a>
+              </label>
+            </div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <button type="submit" class="btn btn-success">Cadastrar</button>
+        </div>
+    </div>
+
+
+</div>
+
+<app-footer></app-footer>

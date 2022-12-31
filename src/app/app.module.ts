@@ -12,6 +12,9 @@ import { GetAllotmentsComponent } from './components/allotments/get-allotments/g
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { ViewAllotmentComponent } from './components/allotments/view-allotment/view-allotment.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,17 @@ import { ViewAllotmentComponent } from './components/allotments/view-allotment/v
     AllotmentComponent,
     FooterComponent,
     GetAllotmentsComponent,
-    ViewAllotmentComponent
+    ViewAllotmentComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

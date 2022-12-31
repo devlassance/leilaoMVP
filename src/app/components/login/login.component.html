@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<div class="flex-center-content">
+    <div class="card-login">
+        <h2 class="title-0 mb-4">Faça seu login</h2>
+
+        <div class="input-group input-group mb-3">
+            <span class="input-group-text bg-white" id="inputGroup-sizing-sm"><fa-icon [icon]="envolope"></fa-icon></span>
+            <input type="text" class="form-control" placeholder="E-mail">
+        </div>
+
+        <div class="input-group input-group mb-3">
+            <span class="input-group-text bg-white" id="inputGroup-sizing-sm"><fa-icon [icon]="lock"></fa-icon></span>
+            <input type="text" class="form-control" placeholder="Senha">
+        </div>
+
+        <p class="text-light mb-3 text-missing-password-email">Esqueceu sua senha ou e-mail?</p>
+
+        <button type="button" class="btn btn-primary mb-3" style="width:100%">ENTRAR</button>
+        <button routerLink="/cadastro" type="button" class="btn btn-success" style="width:100%">NÃO É CADASTRADO? CADASTRE-SE</button>
+    </div>
+</div>
+
+<app-footer></app-footer>

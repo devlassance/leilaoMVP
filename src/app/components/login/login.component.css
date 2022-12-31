@@ -1,0 +1,17 @@
+.card-login{
+    margin: 0 auto;
+    width:420px;
+    background: #2f3542;
+    border-radius: 7px;
+    padding:30px;
+    color:#fff;
+    margin-bottom: 155px;
+    margin-top: 155px;
+}
+.text-missing-password-email{
+    font-size: 13px;
+}
+.text-missing-password-email:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
